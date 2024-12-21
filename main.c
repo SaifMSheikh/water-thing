@@ -14,7 +14,7 @@ int main(const int argc,const char**argv){
 		wtr_lvl=lvl_read();
 		uart_uint(wtr_lvl);
 		uart_line();
-		if(wtr_lvl<ctl_lvl)led_on();
+		if(wtr_lvl>=ctl_lvl)led_on();
 		else led_off();
 		_delay_ms(50);
 	}
